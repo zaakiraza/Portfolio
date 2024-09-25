@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/favicon.jpg" type="png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c681fd371f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>My - Portfolio</title>
+</head>
+
+<body>
+    
+    <section class="navi">
+
+        <nav id="navigation">
+            <div class="container">
+                <div class="content_nav">
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/images/logo.jpg" alt=""></a>
+                    </div>
+                    <ul class="nav_Items">
+                        <li id="list1"><a href="#about">ABOUT</a></li>
+                        <li id="list2"><a href="#sec_education"><i class="fa-solid fa-graduation-cap"></i>EDUCATION</a>
+                        </li>
+                        <li id="list3"><a href="#certificate">CERTIFICATION</a></li>
+                        <li id="list4"><a href="#project">PROJECT</a></li>
+                        <li id="list5"><a href="#contact"><i class="fa-solid fa-phone"></i>CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <nav id="navi_response">
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/logo.jpg" alt=""></a>
+            </div>
+            <div class="menu">
+                <li><i onclick="openmenu()" id="lines" class="fa-solid fa-bars"></i></li>
+                <li><i onclick="closemenu()" id="cros" class="fa-solid fa-x"></i></li>
+            </div>
+        </nav>
+
+        <ul class="nav_Items_response" id="nav_Items_response">
+            <li><a onclick="disablednav()" href="#about">ABOUT</a></li>
+            <li><a onclick="disablednav()" href="#sec_education"><i class="fa-solid fa-graduation-cap"></i>EDUCATION</a></li>
+            <li><a onclick="disablednav()" href="#certificate">CERTIFICATION</a></li>
+            <li><a onclick="disablednav()" href="#project">PROJECT</a></li>
+            <li><a onclick="disablednav()" href="#contact"><i class="fa-solid fa-phone"></i>CONTACT</a></li>
+        </ul>
+
+    </section>
+
+    <section id="banner">
+        <section id="banner1">
+            <div class="container">
+                <div class="content_banner">
+                    <h1>Ideas In Code and well</h1>
+                    <h2>UI / UX DEVELOPER</h2>
+                    <a href="assets/Resume.pdf" target="_blank"><button id="btnResume">My Resume</button></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="banner2">
+            <div class="container">
+                <div class="banner_two">
+                    <h1>Passionate and Experienced Developer</h1>
+                    <a href=""><button id="btnResume">View Projects</button></a>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h1>About</h1>
+            <hr>
+            <div class="content_about">
+                <h3>I am passionate and dedicated front-end developer with a proven track record of creating visually
+                    stunning and highly functional web applications. With a keen eye for design and a meticulous
+                    approach to coding, I excels in translating complex requirements into seamless user experiences.
+                </h3>
+                <p>I am a committed front-end developer known for his punctuality, problem-solving skills, and
+                    collaborative spirit. With a keen eye for detail, he excels in creating visually appealing and
+                    functional web applications. His commitment to continuous learning and excellence ensures that every
+                    project he undertakes meets the highest standards.</p>
+                <div class="contact_small">
+                    <div class="tel">
+                        <h3><i class="fa-solid fa-phone"></i>Phone</h3>
+                        <a href="https://wa.me/923293271727">+92 3293271727</a>
+                    </div>
+                    <div class="tel">
+                        <h3><i class="fa-solid fa-envelope"></i>Email</h3>
+                        <a href="mailto:zaakiraza110@gmail.com">zaakiraza110@gmail.com</a>
+                    </div>
+                    <div class="tel">
+                        <h3>Website</h3>
+                        <a href="index.html">zakirraza110.github.io/zaakiraza</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec_education">
+        <div class="container">
+            <div class="education">
+                <h1>Education</h1>
+                <hr>
+                <div class="education_content">
+                    <div class="edu_box">
+                        <h2>2020 - 2022</h2>
+                        <h3>Intermediate</h3>
+                        <div class="dot">
+                            <div class="dots"></div>
+                            <hr>
+                        </div>
+                        <h4>Fatimimiyah Boyz College</h4>
+                        <h5>Karachi, Pakistan</h5>
+                        <p>I completed my Intermediate in Pre-Engineering from Fatimiyah College, where I gained a
+                            strong foundation in mathematics, physics, and chemistry, setting the stage for my future
+                            studies in technology and engineering.</p>
+                    </div>
+
+                    <div class="edu_box">
+                        <h2>2022 - 2026(Currently Enroll)</h2>
+                        <h3>Bachelor In Computer Science</h3>
+                        <div class="dot">
+                            <div class="dots"></div>
+                            <hr>
+                        </div>
+                        <h4>Muhammad Ali Jinnah University</h4>
+                        <h5>Karachi, Pakistan</h5>
+                        <p>I am pursuing a Bachelor's in Computer Science at Mohammad Ali Jinnah University, known for
+                            its comprehensive curriculum and research opportunities. I'm gaining in-depth knowledge in
+                            programming, software development, data structures, and algorithms.</p>
+                    </div>
+
+                    <div class="edu_box">
+                        <h2>2024 - 2025(Currently Enroll)</h2>
+                        <h3>Web Development Course</h3>
+                        <div class="dot">
+                            <div class="dots"></div>
+                            <hr>
+                        </div>
+                        <h4>SMIT</h4>
+                        <h5>Karachi, Pakistan</h5>
+                        <p>I am enrolled in a Web Development course at Saylani Numaish Campus, known for its practical
+                            approach to learning. This program is equipping me with the latest web development skills
+                            and techniques to create dynamic and responsive websites</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificate">
+        <div class="container">
+            <h1>Certifications</h1>
+            <hr>
+            <div class="c_itm1">
+                <iframe src="assets/certificates/experience letter behindev.pdf"></iframe>
+                <iframe src="assets/certificates/Google Developer.pdf"></iframe>
+            </div>
+            <div class="c_itm1">
+                <iframe src="assets/certificates/IBM PY0101EN.pdf"></iframe>
+                <iframe src="assets/certificates/Web 3.0.pdf"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <div class="skill">
+                <h1>Skills</h1>
+                <hr>
+                <div class="content_skills_main">
+                    <div class="content_skills">
+                        <div id="loader1" class="loader">
+                            <p id="textloader1"></p>
+                        </div>
+                        <h4>HTML</h4>
+                        <div id="loader2" class="loader">
+                            <p id="textloader2"></p>
+                        </div>
+                        <h4>CSS</h4>
+                    </div>
+                    <div class="content_skills">
+                        <div id="loader3" class="loader">
+                            <p id="textloader3"></p>
+                        </div>
+                        <h4>JavaScript</h4>
+                        <div id="loader4" class="loader">
+                            <p id="textloader4"></p>
+                        </div>
+                        <h4>Bootstrap</h4>
+                    </div>
+                    <div class="content_skills">
+                        <div id="loader5" class="loader">
+                            <p id="textloader5"></p>
+                        </div>
+                        <h4>Git</h4>
+                        <div id="loader6" class="loader">
+                            <p id="textloader6"></p>
+                        </div>
+                        <h4>SQL</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h1>Experience</h1>
+            <div class="content_exper exp_fst" id="exp_fst">
+                <div class="time">
+                    <h2>2024</h2>
+                    <h3>FRONT-END DEVELOPER</h3>
+                </div>
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="detail">
+                    <h4>GOOGLE DEVELOPER STUDENT CLUB(GDSC)</h4>
+                    <h5>Remote</h5>
+                    <p>I serves as a Front-End Developer at Google Developer Student Club (GDSC), focusing on creating
+                        intuitive and visually appealing web interfaces. Working remotely, he collaborates with a global
+                        team to deliver impactful digital solutions.</p>
+                </div>
+            </div>
+            <div class="content_exper exp_sec" id="exp_sec">
+                <div class="time">
+                    <h2>2024</h2>
+                    <h3>FRONT-END DEVELOPER</h3>
+                </div>
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="detail">
+                    <h4>NEXTGENDEV</h4>
+                    <h5>Remote</h5>
+                    <p>As an Internee at NextGenDev, I utilized HTML5, CSS3, and JavaScript to develop visually engaging
+                        and user-friendly websites that captivated both our clients and their audiences. I worked in
+                        close collaboration with our design and development teams to transform ideas into reality.</p>
+                </div>
+            </div>
+            <div class="content_exper exp_thd" id="exp_thd">
+                <div class="time">
+                    <h2>2024</h2>
+                    <h3>FRONT-END DEVELOPER</h3>
+                </div>
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="detail">
+                    <h4>PLACEMENTDOST</h4>
+                    <h5>Remote</h5>
+                    <p>As an Internee Front-end Web Developer at PlacementDost, my role involved crafting visually
+                        engaging and user-friendly websites to captivate both our clients and their audiences. I worked
+                        closely with our design and development teams to bring concepts to life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project">
+        <div class="container">
+            <h1>Projects</h1>
+            <hr>
+            <div class="proj_content">
+                <a id="pro1" href="https://zakirraza110.github.io/Faishon-Design/" target="_blank">
+                    <img src="assets/images/Faishon_Design.jpg" alt="">
+                </a>
+                <a id="pro2" href="https://zakirraza110.github.io/Glint/" target="_blank">
+                    <img src="assets/images/glint_template.jpg" alt="">
+                </a>
+            </div>
+            <div class="proj_content">
+                <a id="pro3" href="https://zakirraza110.github.io/Quran.com/" target="_blank">
+                    <img src="assets/images/quran_template.jpg" alt="">
+                </a>
+                <a id="pro4" href="https://zakirraza110.github.io/hackathon-1/" target="_blank">
+                    <img src="assets/images/Positivus.png" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h1>Contact</h1>
+            <div class="footer">
+                <form action="https://api.web3forms.com/submit" method="post">
+                    <input type="hidden" name="access_key" value="7426848e-8259-41ed-9c59-da1749f8fc54">
+                    <input type="text" name="name" placeholder="Name*" required> <br> <br>
+                    <input type="email" name="email" placeholder="E-mail*" required> <br> <br>
+                    <input type="number" name="number" maxlength="11" placeholder="Phone Number*" required> <br> <br>
+                    <textarea name="msg" cols="30" rows="5" placeholder="Message" required></textarea> <br><br>
+                    <input type="submit" placeholder="Submit">
+                </form>
+                <div class="contact">
+                    <img src="assets/images/logo.jpg" alt="">
+                    <p>UI / UX Developer</p>
+                    <h3>Phone</h3>
+                    <a href="tel:+923293271727">+92329 3271727</a>
+                    <h3>E-mail</h3>
+                    <a href="mailto:zaakiraza110@gmail.com">zaakiraza110@gmail.com</a>
+                    <h3>Website</h3>
+                    <a href="index.html">www.zaakiraza.com</a>
+                    <ul class="logo_contact">
+                        <li><a href="https://www.linkedin.com/in/zakir-raza-b56284281/"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/Zakirraza110"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://join.skype.com/invite/uJHeZ9HJnMoO"><i class="fa-brands fa-skype"></i></a></li>
+                        <li><a href="mailto:zaakiraza110@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a href="https://wa.me/923293271727"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="file.js"></script>
+</body>
+
+</html>
