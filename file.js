@@ -27,9 +27,9 @@ function disablednav() {
 
 // #################### Skills ####################
 
-let isfunrun=true;
+let isfunrun = true;
 window.addEventListener('scroll', () => {
-    if ((window.pageYOffset >= 2380 && window.pageYOffset <= 2880) && isfunrun==true) {
+    if ((window.pageYOffset >= 2380 && window.pageYOffset <= 2880) && isfunrun == true) {
         showprogress();
     }
 })
@@ -106,63 +106,48 @@ showprogress = () => {
             document.getElementById('loader6').style.background = `conic-gradient(goldenrod ${n}%, #ebebeb 0deg)`;
         }
     }, 50);
-    isfunrun=false;
-    
+    isfunrun = false;
+
 }
-
-// #################### Banner ####################
-
-// let banner2=document.getElementById("banner2");
-
-// setInterval(() => {
-//     setTimeout(() => {
-//         banner1.style.left="-100%";
-//         banner2.style.left="0%";
-//     }, 3000);
-//     setTimeout(() => {
-//         banner1.style.left="0%";
-//         banner2.style.left="-100%";
-//     }, 6000);
-// }, 6000);
 
 
 // #################### Project ####################
 
-window.addEventListener('scroll',projects=()=>{
-    if(window.pageYOffset >= 3511){
+window.addEventListener('scroll', projects = () => {
+    if (window.pageYOffset >= 3511) {
         setTimeout(() => {
-            document.getElementById('pro1').style.opacity="1";
+            document.getElementById('pro1').style.opacity = "1";
         }, 500);
         setTimeout(() => {
-            document.getElementById('pro2').style.opacity="1";
+            document.getElementById('pro2').style.opacity = "1";
         }, 1000);
         setTimeout(() => {
-            document.getElementById('pro3').style.opacity="1";
+            document.getElementById('pro3').style.opacity = "1";
         }, 1500);
         setTimeout(() => {
-            document.getElementById('pro4').style.opacity="1";
+            document.getElementById('pro4').style.opacity = "1";
         }, 2000);
     }
 })
 
 // #################### Experience ####################
 
-window.addEventListener('scroll',experience=()=>{
-    if(window.pageYOffset >= 2852){
+window.addEventListener('scroll', experience = () => {
+    if (window.pageYOffset >= 2852) {
         setTimeout(() => {
-            document.getElementById("exp_fst").style.opacity="1";
+            document.getElementById("exp_fst").style.opacity = "1";
         }, 500);
         setTimeout(() => {
-            document.getElementById("exp_sec").style.opacity="1";
+            document.getElementById("exp_sec").style.opacity = "1";
         }, 1000);
         setTimeout(() => {
-            document.getElementById("exp_thd").style.opacity="1";
+            document.getElementById("exp_thd").style.opacity = "1";
         }, 1500);
     }
 })
 
 
-
+// banner
 
 let heading1 = document.getElementById('heading1');
 let heading2 = document.getElementById('heading2');
