@@ -145,24 +145,6 @@ a {
 
 .content_banner h1 {
     font-size: 60px;
-    width: 24rem;
-    border-right: 1px solid goldenrod;
-    overflow: hidden;
-    animation: typing 3s infinite alternate, cursor .3s step-end infinite alternate;
-    height: 60px;
-    margin: 20px 0;
-}
-
-@keyframes cursor {
-    50% {
-        border-color: transparent;
-    }
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
 }
 
 #banner2 {

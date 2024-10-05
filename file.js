@@ -160,3 +160,71 @@ window.addEventListener('scroll',experience=()=>{
         }, 1500);
     }
 })
+
+
+
+
+let heading1 = document.getElementById('heading1');
+let heading2 = document.getElementById('heading2');
+let text1 = "Ideas In Code";
+let text2 = "UI / UX DEVELOPER";
+let index = 0;
+let index1 = 0;
+let arr = [];
+let arr1 = [];
+
+function typing() {
+    if (index < text1.length) {
+        arr.push(text1[index]);
+        heading1.innerHTML = arr.join("");
+        index++;
+        setTimeout(typing, 200);
+    } else {
+        setTimeout(typing1, 500);
+    }
+}
+
+function typing1() {
+    if (index1 < text2.length) {
+        arr1.push(text2[index1]);
+        heading2.innerHTML = arr1.join("");
+        index1++;
+        setTimeout(typing1, 200);
+    } else {
+        setTimeout(startRemoval, 2000);
+    }
+}
+
+function startRemoval() {
+    setTimeout(typing1end, 500);
+}
+
+function typing1end() {
+    if (arr1.length > 0) {
+        arr1.pop();
+        heading2.innerHTML = arr1.join("");
+        setTimeout(typing1end, 100);
+    } else {
+        setTimeout(typingend, 500);
+    }
+}
+
+function typingend() {
+    if (arr.length > 0) {
+        arr.pop();
+        heading1.innerHTML = arr.join("");
+        setTimeout(typingend, 100);
+    } else {
+        setTimeout(restartAnimation, 200);
+    }
+}
+function restartAnimation() {
+    index = 0;
+    index1 = 0;
+    arr = [];
+    arr1 = [];
+
+    setTimeout(typing, 200);
+}
+
+restartAnimation();
