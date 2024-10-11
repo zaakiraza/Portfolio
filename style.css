@@ -145,7 +145,12 @@ a {
 
 .content_banner h1 {
     font-size: 60px;
+    position: relative;
 }
+.content_banner h2{
+    position: relative;
+}
+
 #banner2 {
     background-image: url(assets/images/banner2.jpg);
     background-position: center;
