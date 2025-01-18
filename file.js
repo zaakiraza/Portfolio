@@ -211,5 +211,24 @@ function restartAnimation() {
 
     setTimeout(typing, 200);
 }
-
 restartAnimation();
+
+// showAllCertificate
+const showAllCertificate = (a,b,c) => {
+    let x = document.getElementById(a);
+    let y = document.getElementById(b);
+    let z = document.getElementById(c);
+    x.style.display = "block"
+    y.style.display = "none";
+    z.style.display = "block";
+}
+
+// hideAllCertificate
+const hideAllCertificate = (a,b,c) => {
+    let x = document.getElementById(a);
+    let y = document.getElementById(b);
+    let z = document.getElementById(c);
+    x.style.display = "none"
+    y.style.display = "flex";
+    z.style.display = "none";
+}

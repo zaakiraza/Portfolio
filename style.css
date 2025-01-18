@@ -147,7 +147,8 @@ a {
     font-size: 60px;
     position: relative;
 }
-.content_banner h2{
+
+.content_banner h2 {
     position: relative;
 }
 
@@ -191,7 +192,7 @@ a {
     padding: 0 24% 0 0;
 }
 
-#btnResume {
+.btnResume {
     margin-top: 16px;
     padding: 10px 25px;
     border: 2px solid goldenrod;
@@ -202,7 +203,7 @@ a {
     transition: 0.5s;
 }
 
-#btnResume:hover {
+.btnResume:hover {
     background-color: black;
 }
 
@@ -353,8 +354,27 @@ iframe {
 .c_itm1 {
     margin-top: 35px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
+    gap: 4%;
+}
+
+#btnCertificate,
+#btnCertificate1 {
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    top: 23px;
+    font-weight: bold;
+}
+
+#btnCertificate1 {
+    display: none;
+}
+
+#toggleCertificate {
+    display: none;
 }
 
 /* #################### Skills #################### */
@@ -518,6 +538,22 @@ section#experience h1 {
     border-radius: 20px;
 }
 
+#showAllpojects,#btnProject1 {
+    display: none !important;
+}
+
+#btnProject,
+#btnProject1 {
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    top: 23px;
+    font-weight: bold;
+}
+
+#pro5 {
+    opacity: 1;
+}
 
 /* #################### footer #################### */
 

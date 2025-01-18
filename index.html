@@ -24,7 +24,8 @@
                     </div>
                     <ul class="nav_Items">
                         <li id="list1"><a href="#about">ABOUT</a></li>
-                        <li id="list2"><a href="#sec_education"><i class="fa-solid fa-graduation-cap"></i>EDUCATION</a></li>
+                        <li id="list2"><a href="#sec_education"><i class="fa-solid fa-graduation-cap"></i>EDUCATION</a>
+                        </li>
                         <li id="list3"><a href="#certificate">CERTIFICATION</a></li>
                         <li id="list4"><a href="#project">PROJECT</a></li>
                         <li id="list5"><a href="#contact"><i class="fa-solid fa-phone"></i>CONTACT</a></li>
@@ -45,7 +46,8 @@
 
         <ul class="nav_Items_response" id="nav_Items_response">
             <li><a onclick="disablednav()" href="#about">ABOUT</a></li>
-            <li><a onclick="disablednav()" href="#sec_education"><i class="fa-solid fa-graduation-cap"></i>EDUCATION</a></li>
+            <li><a onclick="disablednav()" href="#sec_education"><i class="fa-solid fa-graduation-cap"></i>EDUCATION</a>
+            </li>
             <li><a onclick="disablednav()" href="#certificate">CERTIFICATION</a></li>
             <li><a onclick="disablednav()" href="#project">PROJECT</a></li>
             <li><a onclick="disablednav()" href="#contact"><i class="fa-solid fa-phone"></i>CONTACT</a></li>
@@ -59,7 +61,8 @@
                 <div class="content_banner">
                     <h1 id="heading1"></h1>
                     <h2 id="heading2"></h2>
-                    <a href="assets/Resume.pdf" target="_blank"><button id="btnResume">My Resume</button></a>
+                    <a href="assets/Resume.pdf" target="_blank"><button id="btnResume" class="btnResume">My
+                            Resume</button></a>
                 </div>
             </div>
         </section>
@@ -168,8 +171,27 @@
             </div>
             <div class="c_itm1">
                 <iframe src="assets/certificates/IBM PY0101EN.pdf"></iframe>
-                <iframe src="assets/certificates/Web 3.0.pdf"></iframe>
+                <iframe src="assets/certificates/procom.pdf"></iframe>
             </div>
+
+            <button class="btnResume" id="btnCertificate"
+                onclick="showAllCertificate('toggleCertificate','btnCertificate','btnCertificate1')">Show All</button>
+
+            <div id="toggleCertificate">
+                <div class="c_itm1">
+                    <iframe src="assets/certificates/Web 3.0.pdf"></iframe>
+                    <iframe src="assets/certificates/ACM.pdf"></iframe>
+                </div>
+                <div class="c_itm1">
+                    <iframe src="assets/certificates/awardcermony3.pdf"></iframe>
+                    <iframe src="assets/certificates/Cyber Security.pdf"></iframe>
+                </div>
+                <div class="c_itm1">
+                    <iframe src="assets/certificates/batch.pdf"></iframe>
+                </div>
+            </div>
+            <button class="btnResume" id="btnCertificate1"
+                onclick="hideAllCertificate('toggleCertificate','btnCertificate','btnCertificate1')">Show Less</button>
         </div>
     </section>
 
@@ -291,6 +313,18 @@
                     <img src="assets/images/Positivus.png" alt="">
                 </a>
             </div>
+
+            <button class="btnResume" id="btnProject" onclick="showAllCertificate('showAllpojects','btnProject','btnProject1')">Show All</button>
+
+            <div id="showAllpojects">
+                <div class="proj_content">
+                    <a id="pro5" href="https://zaakiraza.github.io/Course-Registration-System-Scheduling-Algorithm-/"
+                        target="_blank">
+                        <img src="assets/images/OS.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <button class="btnResume" id="btnProject1" onclick="hideAllCertificate('showAllpojects','btnProject','btnProject1')">Show Less</button>
         </div>
     </section>
 
@@ -316,9 +350,11 @@
                     <h3>Website</h3>
                     <a href="index.html">www.zaakiraza.com</a>
                     <ul class="logo_contact">
-                        <li><a href="https://www.linkedin.com/in/zakir-raza-b56284281/"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/zakir-raza-b56284281/"><i
+                                    class="fa-brands fa-linkedin"></i></a></li>
                         <li><a href="https://github.com/zaakiraza"><i class="fa-brands fa-github"></i></a></li>
-                        <li><a href="https://join.skype.com/invite/uJHeZ9HJnMoO"><i class="fa-brands fa-skype"></i></a></li>
+                        <li><a href="https://join.skype.com/invite/uJHeZ9HJnMoO"><i class="fa-brands fa-skype"></i></a>
+                        </li>
                         <li><a href="mailto:zaakiraza110@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
                         <li><a href="https://wa.me/923293271727"><i class="fa-brands fa-whatsapp"></i></a></li>
                     </ul>
