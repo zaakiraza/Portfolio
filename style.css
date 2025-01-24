@@ -746,9 +746,8 @@ input[type="submit"]:hover {
     }
 
     .content_banner h1 {
-        font-size: 51px;
-        width: 20rem;
-        height: 56px;
+        font-size: 40px;
+        width: 18rem;
     }
 
     .content_about {
@@ -767,7 +766,7 @@ input[type="submit"]:hover {
         font-size: 20px;
     }
 
-    section#experience h1 {
+    #experience h1 {
         margin: 25px 0;
     }
 
