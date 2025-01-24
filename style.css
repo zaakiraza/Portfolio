@@ -538,12 +538,15 @@ section#experience h1 {
     border-radius: 20px;
 }
 
-#showAllpojects,#btnProject1 {
-    display: none !important;
+.showAllpojects {
+    display: none;
 }
 
-#btnProject,
 #btnProject1 {
+    display: none;
+}
+
+.btnPro {
     margin: 0 auto;
     display: flex;
     position: relative;
