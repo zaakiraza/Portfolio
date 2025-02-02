@@ -127,6 +127,15 @@ window.addEventListener('scroll', projects = () => {
         setTimeout(() => {
             document.getElementById('pro4').style.opacity = "1";
         }, 2000);
+        setTimeout(() => {
+            document.getElementById('pro5').style.opacity = "1";
+        }, 2000);
+        setTimeout(() => {
+            document.getElementById('pro6').style.opacity = "1";
+        }, 2000);
+        setTimeout(() => {
+            document.getElementById('pro7').style.opacity = "1";
+        }, 2000);
     }
 })
 
