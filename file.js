@@ -129,13 +129,16 @@ window.addEventListener('scroll', projects = () => {
         }, 2000);
         setTimeout(() => {
             document.getElementById('pro5').style.opacity = "1";
-        }, 2000);
+        }, 2500);
         setTimeout(() => {
             document.getElementById('pro6').style.opacity = "1";
-        }, 2000);
+        }, 3000);
         setTimeout(() => {
             document.getElementById('pro7').style.opacity = "1";
-        }, 2000);
+        }, 3500);
+        setTimeout(() => {
+            document.getElementById('pro8').style.opacity = "1";
+        }, 4000);
     }
 })
 
