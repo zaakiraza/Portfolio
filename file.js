@@ -127,18 +127,6 @@ window.addEventListener('scroll', projects = () => {
         setTimeout(() => {
             document.getElementById('pro4').style.opacity = "1";
         }, 2000);
-        setTimeout(() => {
-            document.getElementById('pro5').style.opacity = "1";
-        }, 2500);
-        setTimeout(() => {
-            document.getElementById('pro6').style.opacity = "1";
-        }, 3000);
-        setTimeout(() => {
-            document.getElementById('pro7').style.opacity = "1";
-        }, 3500);
-        setTimeout(() => {
-            document.getElementById('pro8').style.opacity = "1";
-        }, 4000);
     }
 })
 
@@ -164,7 +152,7 @@ window.addEventListener('scroll', experience = () => {
 let heading1 = document.getElementById('heading1');
 let heading2 = document.getElementById('heading2');
 let text1 = "Ideas In Code";
-let text2 = "UI / UX DEVELOPER";
+let text2 = "Front-End Developer";
 let index = 0;
 let index1 = 0;
 let arr = [];
@@ -180,7 +168,6 @@ function typing() {
         setTimeout(typing1, 500);
     }
 }
-
 function typing1() {
     if (index1 < text2.length) {
         arr1.push(text2[index1]);
@@ -191,11 +178,9 @@ function typing1() {
         setTimeout(startRemoval, 2000);
     }
 }
-
 function startRemoval() {
     setTimeout(typing1end, 500);
 }
-
 function typing1end() {
     if (arr1.length > 0) {
         arr1.pop();
@@ -205,7 +190,6 @@ function typing1end() {
         setTimeout(typingend, 500);
     }
 }
-
 function typingend() {
     if (arr.length > 0) {
         arr.pop();
@@ -226,21 +210,68 @@ function restartAnimation() {
 restartAnimation();
 
 // showAllCertificate
-const showAllCertificate = (a,b,c) => {
+const showAllCertificate = (a, b, c) => {
     let x = document.getElementById(a);
     let y = document.getElementById(b);
     let z = document.getElementById(c);
     x.style.display = "block";
     y.style.display = "none";
     z.style.display = "flex";
+    if (x.id == 'showAllpojects') {
+        showOneByOneProjects();
+    }
+    if (x.id == 'toggleCertificate') {
+        showOneByOneCertificate();
+    }
 }
 
 // hideAllCertificate
-const hideAllCertificate = (a,b,c) => {
+const hideAllCertificate = (a, b, c) => {
     let x = document.getElementById(a);
     let y = document.getElementById(b);
     let z = document.getElementById(c);
+    if (x.id == 'showAllpojects') {
+        hideOneByOneProjects();
+    }
+    if (x.id == 'btnCertificate1') {
+        hideOneByOneCertificate();
+    }
     x.style.display = "none";
     y.style.display = "flex";
     z.style.display = "none";
+}
+
+// animation
+function showOneByOneProjects() {
+    let arr = ['pro5', 'pro6', 'pro7', 'pro8', 'pro9'];
+    let count = 500;
+    arr.forEach((pro) => {
+        setTimeout(() => {
+            document.getElementById(pro).style.opacity = "1";
+        }, count);
+        count = count + 500;
+    });
+}
+function showOneByOneCertificate() {
+    let arr = ['cert5', 'cert6', 'cert7', 'cert8'];
+    let count = 500;
+    arr.forEach((cert) => {
+        setTimeout(() => {
+            document.getElementById(cert).style.opacity = "1";
+        }, count);
+        count = count + 500;
+    });
+}
+
+function hideOneByOneProjects() {
+    let arr = ['cert5', 'cert6', 'cert7', 'cert8'];
+    arr.forEach((pro) => {
+        document.getElementById(pro).style.opacity = "0";
+    });
+}
+function hideOneByOneCertificate() {
+    let arr = ['cert5', 'cert6', 'cert7', 'cert8'];
+    arr.forEach((cert) => {
+        document.getElementById(cert).style.opacity = "0";
+    });
 }
