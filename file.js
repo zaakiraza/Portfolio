@@ -243,7 +243,7 @@ const hideAllCertificate = (a, b, c) => {
 
 // animation
 function showOneByOneProjects() {
-    let arr = ['pro5', 'pro6', 'pro7', 'pro8', 'pro9'];
+    let arr = ['pro5', 'pro6', 'pro7', 'pro8', 'pro9','pro10'];
     let count = 500;
     arr.forEach((pro) => {
         setTimeout(() => {
@@ -264,7 +264,7 @@ function showOneByOneCertificate() {
 }
 
 function hideOneByOneProjects() {
-    let arr = ['cert5', 'cert6', 'cert7', 'cert8'];
+    let arr = ['pro5', 'pro6', 'pro7', 'pro8', 'pro9','pro10'];
     arr.forEach((pro) => {
         document.getElementById(pro).style.opacity = "0";
     });
