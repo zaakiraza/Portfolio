@@ -367,7 +367,20 @@ iframe {
     position: relative;
     top: 23px;
     font-weight: bold;
+    transition: all 0.3s, transform 0.2s;
 }
+
+#btnCertificate:hover,
+#btnCertificate1:hover {
+    background: black;
+    transform: scale(1.02);
+}
+
+#btnCertificate:active,
+#btnCertificate1:active {
+    transform: scale(0.98);
+}
+
 
 #btnCertificate1 {
     display: none;
