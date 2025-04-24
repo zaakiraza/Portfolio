@@ -106,6 +106,31 @@ showprogress = () => {
             document.getElementById('loader6').style.background = `conic-gradient(goldenrod ${n}%, #ebebeb 0deg)`;
         }
     }, 50);
+
+    let o = 0;
+    let skill7 = setInterval(() => {
+        o++;
+        if (o == 51) {
+            clearInterval(skill7);
+        }
+        else {
+            document.getElementById('textloader7').innerHTML = o + "%";
+            document.getElementById('loader7').style.background = `conic-gradient(goldenrod ${o}%, #ebebeb 0deg)`;
+        }
+    }, 50);
+
+    let p = 0;
+    let skill8 = setInterval(() => {
+        p++;
+        if (p == 61) {
+            clearInterval(skill8);
+        }
+        else {
+            document.getElementById('textloader8').innerHTML = p + "%";
+            document.getElementById('loader8').style.background = `conic-gradient(goldenrod ${p}%, #ebebeb 0deg)`;
+        }
+    }, 50);
+
     isfunrun = false;
 
 }
@@ -152,7 +177,7 @@ window.addEventListener('scroll', experience = () => {
 let heading1 = document.getElementById('heading1');
 let heading2 = document.getElementById('heading2');
 let text1 = "Ideas In Code";
-let text2 = "Front-End Developer";
+let text2 = "Full-Stack Developer";
 let index = 0;
 let index1 = 0;
 let arr = [];
