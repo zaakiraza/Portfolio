@@ -177,7 +177,7 @@ window.addEventListener('scroll', experience = () => {
 let heading1 = document.getElementById('heading1');
 let heading2 = document.getElementById('heading2');
 let text1 = "Ideas In Code";
-let text2 = "Full-Stack Developer";
+let text2 = "Mern-Stack Developer";
 let index = 0;
 let index1 = 0;
 let arr = [];
