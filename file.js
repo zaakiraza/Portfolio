@@ -168,6 +168,9 @@ window.addEventListener('scroll', experience = () => {
         setTimeout(() => {
             document.getElementById("exp_thd").style.opacity = "1";
         }, 1500);
+        setTimeout(() => {
+            document.getElementById("exp_for").style.opacity = "1";
+        }, 2000);
     }
 })
 
@@ -268,7 +271,7 @@ const hideAllCertificate = (a, b, c) => {
 
 // animation
 function showOneByOneProjects() {
-    let arr = ['pro5', 'pro6', 'pro7', 'pro8', 'pro9','pro10'];
+    let arr = ['pro5', 'pro6', 'pro7', 'pro8', 'pro9','pro10','pro11','pro12'];
     let count = 500;
     arr.forEach((pro) => {
         setTimeout(() => {
