@@ -151,4 +151,40 @@
     display: inline-block;
     margin-bottom: 0.5rem;
   }
+
+  .timeline-degree {
+    font-size: 1.15rem;
+  }
+
+  .timeline-institution {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-item {
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .timeline-content {
+    padding: 1.25rem !important;
+  }
+
+  .timeline-degree {
+    font-size: 1.05rem;
+  }
+
+  .timeline-institution {
+    font-size: 0.95rem;
+  }
+
+  .timeline-description {
+    font-size: 0.9rem;
+  }
+
+  .timeline-year {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
 }

@@ -29,7 +29,10 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container nav-container">
         <Link to="hero" smooth={true} duration={500} className="logo">
-          <img src="/assets/images/logo.jpg" alt="Zakir Raza" />
+          <span className="logo-text">
+            <span className="logo-name">ZAKIR RAZA</span>
+            <span className="logo-tagline">Ideas In Code</span>
+          </span>
         </Link>
 
         <ul className={isMobile ? 'nav-links mobile-active' : 'nav-links'}>

@@ -37,7 +37,11 @@
   top: 16px;
   width: 2px;
   height: calc(100% + 2.5rem);
-  background: linear-gradient(180deg, var(--primary-color) 0%, var(--border-color) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--primary-color) 0%,
+    var(--border-color) 100%
+  );
 }
 
 .experience-content {
@@ -60,7 +64,11 @@
   top: 1rem;
   right: 1rem;
   padding: 0.4rem 1rem;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   color: var(--bg-primary);
   border-radius: 20px;
   font-size: 0.75rem;
@@ -137,5 +145,38 @@
 
   .experience-company {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-item {
+    padding-left: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .experience-content {
+    padding: 1.25rem;
+  }
+
+  .experience-position {
+    font-size: 1.05rem;
+  }
+
+  .experience-company {
+    font-size: 0.95rem;
+  }
+
+  .experience-description {
+    font-size: 13px;
+  }
+
+  .experience-year {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .current-badge {
+    position: static;
+    margin-bottom: 0.75rem;
   }
 }

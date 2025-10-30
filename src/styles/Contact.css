@@ -183,11 +183,30 @@
   .form-group input,
   .form-group textarea {
     padding: 0.8rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .form-group textarea {
+    min-height: 120px;
   }
 
   .social-icons a {
     width: 45px;
     height: 45px;
     font-size: 1.3rem;
+  }
+
+  .contact-details {
+    padding: 1.5rem;
+  }
+
+  .social-links {
+    padding: 1.5rem;
+  }
+
+  .contact-detail-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
 }

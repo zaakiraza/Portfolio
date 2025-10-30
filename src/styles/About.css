@@ -7,6 +7,13 @@
   grid-template-columns: 1.5fr 1fr;
   gap: 4rem;
   align-items: start;
+  width: 100%;
+  max-width: 100%;
+}
+
+.about-text {
+  width: 100%;
+  max-width: 100%;
 }
 
 .about-intro {
@@ -15,6 +22,7 @@
   line-height: 1.8;
   margin-bottom: 1.5rem;
   font-weight: 500;
+  word-wrap: break-word;
 }
 
 .about-description {
@@ -22,12 +30,14 @@
   color: var(--text-secondary);
   line-height: 1.8;
   margin-bottom: 2.5rem;
+  word-wrap: break-word;
 }
 
 .contact-info {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  width: 100%;
 }
 
 .contact-item {
@@ -39,6 +49,9 @@
   border-radius: 12px;
   border: 1px solid var(--border-color);
   transition: all 0.3s ease;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .contact-item:hover {
@@ -51,6 +64,12 @@
   font-size: 1.5rem;
   color: var(--primary-color);
   min-width: 30px;
+  flex-shrink: 0;
+}
+
+.contact-item div {
+  flex: 1;
+  min-width: 0;
 }
 
 .contact-item h4 {
@@ -64,6 +83,8 @@
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
+  word-break: break-all;
+  display: block;
 }
 
 .contact-item a:hover {
@@ -93,7 +114,11 @@
 
 .stat-card h3 {
   font-size: 2.5rem;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -112,21 +137,64 @@
     gap: 3rem;
   }
 
+  .about-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .about-stats {
     grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .about-intro,
+  .about-description {
+    font-size: 16px;
   }
 }
 
 @media (max-width: 480px) {
-  .about-intro {
-    font-size: 1.1rem;
+  .about-intro,
+  .about-description {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* .about-description {
+    font-size: 0.95rem;
+    text-align: left;
+  } */
+
+  .about-content {
+    gap: 2rem;
   }
 
   .about-stats {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .stat-card {
+    padding: 1.5rem 1rem;
+    width: 100%;
   }
 
   .stat-card h3 {
     font-size: 2rem;
+  }
+
+  .contact-item {
+    padding: 0.75rem;
+    width: 100%;
+  }
+
+  .contact-info {
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .contact-item div {
+    width: 100%;
+    font-size: 15px;
   }
 }

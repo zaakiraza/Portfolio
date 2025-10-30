@@ -78,7 +78,10 @@ const Hero = () => {
         >
           <div className="image-wrapper">
             <div className="animated-border"></div>
-            <img src="/assets/images/logo.jpg" alt="Zakir Raza" />
+            <div className="hero-avatar">
+              <span className="avatar-initials">ZR</span>
+              <div className="avatar-decoration"></div>
+            </div>
           </div>
         </motion.div>
       </div>

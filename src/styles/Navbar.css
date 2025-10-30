@@ -24,21 +24,51 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem !important;
 }
 
 .logo {
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
-.logo img {
-  height: 50px;
-  width: auto;
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
 }
 
-.logo:hover {
-  transform: scale(1.05);
+.logo-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s ease;
+}
+
+.logo-tagline {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.logo:hover .logo-name {
+  letter-spacing: 3px;
+}
+
+.logo:hover .logo-tagline {
+  color: var(--primary-color);
 }
 
 .nav-links {
@@ -59,13 +89,17 @@
 }
 
 .nav-links li a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   transition: width 0.3s ease;
 }
 
@@ -149,8 +183,14 @@
 }
 
 @media (max-width: 480px) {
-  .logo img {
-    height: 40px;
+  .logo-name {
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+  }
+
+  .logo-tagline {
+    font-size: 0.55rem;
+    letter-spacing: 2px;
   }
 
   .theme-toggle {
