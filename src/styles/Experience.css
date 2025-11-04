@@ -61,8 +61,8 @@
 
 .current-badge {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: -12px;
+  right: 1.5rem;
   padding: 0.4rem 1rem;
   background: linear-gradient(
     135deg,
@@ -74,6 +74,7 @@
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(0, 255, 136, 0.3);
 }
 
 .experience-header {
