@@ -1,15 +1,20 @@
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { FaDownload } from 'react-icons/fa';
-import '../styles/Hero.css';
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { FaDownload } from "react-icons/fa";
+import "../styles/Hero.css";
 
 const Hero = () => {
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const toRotate = ["MERN Stack Developer", "Full Stack Developer", "UI/UX Enthusiast", "Problem Solver"];
+  const toRotate = [
+    "MERN Stack Developer",
+    "Full Stack Developer",
+    "UI/UX Enthusiast",
+    "Problem Solver",
+  ];
 
   useEffect(() => {
     const handleType = () => {
@@ -26,7 +31,7 @@ const Hero = () => {
 
       if (!isDeleting && text === fullText) {
         setTimeout(() => setIsDeleting(true), 2000);
-      } else if (isDeleting && text === '') {
+      } else if (isDeleting && text === "") {
         setIsDeleting(false);
         setLoopNum(loopNum + 1);
       }
@@ -41,7 +46,7 @@ const Hero = () => {
       <div className="hero-background">
         <div className="gradient-overlay"></div>
       </div>
-      
+
       <div className="container hero-content">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -57,11 +62,17 @@ const Hero = () => {
             <span className="cursor">|</span>
           </h2>
           <p className="hero-description">
-            Passionate about creating stunning web experiences and turning ideas into reality.
+            Passionate about creating stunning web experiences and turning ideas
+            into reality.
           </p>
-          
+
           <div className="hero-buttons">
-            <a href="/assets/Resume.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            <a
+              href="/Portfolio/assets/Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
               <FaDownload /> Download Resume
             </a>
             <a href="#projects" className="btn btn-secondary">

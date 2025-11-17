@@ -260,3 +260,57 @@ export const certificates = [
     pdf: "/Portfolio/assets/certificates/batch.pdf",
   },
 ];
+
+// Hackathons & Competitions
+export const competitions = [
+  {
+    id: 1,
+    title: "Google Chrome Built-in AI Challenge 2025",
+    year: "2025",
+    role: "Team Lead",
+    award: "No Place",
+    description:
+      "Led a 4-member team to build a scalable MERN application that automated student workflows and attendance using real-time updates.",
+    link: "https://resume-frontend-dfdze0x80-razas-projects-30ea6975.vercel.app/",
+  },
+  {
+    id: 2,
+    title: "SMIT Web Challenge",
+    year: "2024",
+    role: "Frontend Developer",
+    award: "Runner Up",
+    description:
+      "Developed an accessible and responsive landing page with interactive animations and performance optimizations.",
+    link: "",
+  },
+  {
+    id: 3,
+    title: "Nasa Space Apps Challenge 2025",
+    year: "2025",
+    role: "Full Stack",
+    award: "Honorable Mention",
+    description:
+      "Built an API-integrated dashboard to visualize community events and member statistics using Chart.js and MongoDB aggregation.",
+    link: "",
+  },
+  {
+    id: 4,
+    title: "Tekno fest",
+    year: "2025",
+    role: "Full Stack",
+    award: "Honorable Mention",
+    description:
+      "Built an API-integrated dashboard to visualize community events and member statistics using Chart.js and MongoDB aggregation.",
+    link: "",
+  },
+  {
+    id: 5,
+    title: "Procom",
+    year: "2025",
+    role: "Full Stack",
+    award: "Honorable Mention",
+    description:
+      "Built an API-integrated dashboard to visualize community events and member statistics using Chart.js and MongoDB aggregation.",
+    link: "",
+  },
+];
