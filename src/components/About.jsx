@@ -70,20 +70,20 @@ const About = () => {
             className="about-stats"
           >
             <div className="stat-card">
-              <h3>4+</h3>
+              <h3>2+</h3>
               <p>Years of Experience</p>
             </div>
             <div className="stat-card">
-              <h3>12+</h3>
+              <h3>20+</h3>
               <p>Projects Completed</p>
             </div>
             <div className="stat-card">
-              <h3>9+</h3>
+              <h3>3+</h3>
               <p>Certifications</p>
             </div>
             <div className="stat-card">
-              <h3>100%</h3>
-              <p>Client Satisfaction</p>
+              <h3>5+</h3>
+              <p>Competitions Participated</p>
             </div>
           </motion.div>
         </div>
