@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaBriefcase, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaMapMarkerAlt } from 'react-icons/fa';
 import { experience } from '../data/portfolioData';
 import '../styles/Experience.css';
 
@@ -34,11 +34,19 @@ const Experience = () => {
               <div className="experience-content">
                 {exp.current && <span className="current-badge">Current</span>}
                 <div className="experience-header">
-                  <div>
-                    <h3 className="experience-position">{exp.position}</h3>
-                    <h4 className="experience-company">
-                      <FaBriefcase /> {exp.company}
-                    </h4>
+                  <div className="experience-header-main">
+                    {exp.logo && (
+                      <img
+                        src={exp.logo}
+                        alt={`${exp.company} logo`}
+                        className="experience-logo"
+                        loading="lazy"
+                      />
+                    )}
+                    <div>
+                      <h3 className="experience-position">{exp.position}</h3>
+                      <h4 className="experience-company">{exp.company}</h4>
+                    </div>
                   </div>
                   <span className="experience-year">{exp.year}</span>
                 </div>

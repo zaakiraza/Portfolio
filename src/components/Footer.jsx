@@ -14,7 +14,7 @@ const Footer = () => {
               <span className="footer-logo-name">ZAKIR RAZA</span>
               <span className="footer-logo-tagline">Ideas In Code</span>
             </div>
-            <p className="footer-tagline">Building the web, one line at a time.</p>
+            <p className="footer-tagline">I solve problems first — code is how I bring solutions to life.</p>
           </div>
 
           <div className="footer-bottom">

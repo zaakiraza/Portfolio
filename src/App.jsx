@@ -46,7 +46,7 @@ function App() {
         <Skills />
         <Experience />
         <Projects />
-  <Competitions />
+        <Competitions />
         <Contact />
       </main>
       <Footer />

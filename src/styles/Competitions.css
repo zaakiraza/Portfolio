@@ -66,8 +66,7 @@
   flex-direction: column;
 }
 
-.competition-role,
-.competition-award {
+.competition-role {
   margin: 0.25rem 0;
   color: var(--text-primary);
 }

@@ -97,9 +97,9 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      <div className="scroll-indicator">
-        <div className="mouse"></div>
-      </div>
+      {/* <div className="scroll-Windicator">
+        <div className="W"></div>
+      </div> */}
     </section>
   );
 };

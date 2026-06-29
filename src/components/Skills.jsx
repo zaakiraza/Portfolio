@@ -1,9 +1,14 @@
 import { motion } from 'framer-motion';
 import { 
   FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, 
-  FaGitAlt, FaBootstrap, FaDatabase, FaPython, FaAws, FaGithub, FaServer
+  FaGitAlt, FaBootstrap, FaDatabase, FaPython, FaAws, FaGithub, FaServer,
+  FaLock, FaRobot, FaKey, FaBrain, FaPenFancy, FaNetworkWired
 } from 'react-icons/fa';
-import { SiExpress, SiMongodb, SiTailwindcss, SiMui, SiMysql, SiScikitlearn } from 'react-icons/si';
+import {
+  SiExpress, SiMongodb, SiTailwindcss, SiMui, SiMysql, SiScikitlearn,
+  SiRedis, SiRedux, SiGithubactions, SiFastapi, SiSequelize, SiNginx,
+  SiPm2, SiVercel
+} from 'react-icons/si';
 import { skills } from '../data/portfolioData';
 import '../styles/Skills.css';
 
@@ -27,7 +32,28 @@ const Skills = () => {
       aws: <FaAws />,
       github: <FaGithub />,
       hosting: <FaServer />,
-      scikit: <SiScikitlearn />
+      scikit: <SiScikitlearn />,
+      redux: <SiRedux />,
+      redis: <SiRedis />,
+      cache: <FaServer />,
+      storage: <FaDatabase />,
+      microservices: <FaServer />,
+      cicd: <SiGithubactions />,
+      rag: <FaPython />,
+      fastapi: <SiFastapi />,
+      api: <FaNetworkWired />,
+      auth: <FaLock />,
+      llm: <FaRobot />,
+      vectordb: <SiMongodb />,
+      schema: <FaDatabase />,
+      indexing: <FaDatabase />,
+      sequelize: <SiSequelize />,
+      vercel: <SiVercel />,
+      nginx: <SiNginx />,
+      pm2: <SiPm2 />,
+      secrets: <FaKey />,
+      embeddings: <FaBrain />,
+      prompt: <FaPenFancy />
     };
     return icons[iconName] || <FaDatabase />;
   };

@@ -18,7 +18,6 @@ const Competitions = () => {
               </header>
               <div className="competition-body">
                 <p className="competition-role">Role: <strong>{c.role}</strong></p>
-                <p className="competition-award">Award: <strong>{c.award}</strong></p>
                 <p className="competition-desc">{c.description}</p>
               </div>
               {c.link ? (

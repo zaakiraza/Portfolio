@@ -54,7 +54,7 @@
 }
 
 .experience-content:hover {
-  transform: translateX(10px);
+  transform: translateY(-4px);
   border-color: var(--primary-color);
   box-shadow: 0 8px 25px var(--shadow-color);
 }
@@ -84,6 +84,24 @@
   margin-bottom: 1rem;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.experience-header-main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.experience-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  padding: 0.35rem;
+  flex-shrink: 0;
 }
 
 .experience-position {
@@ -138,6 +156,11 @@
 
   .experience-header {
     flex-direction: column;
+  }
+
+  .experience-logo {
+    width: 48px;
+    height: 48px;
   }
 
   .experience-position {
