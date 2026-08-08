@@ -45,7 +45,7 @@ export const education = [
     location: "Karachi, Pakistan",
     description:
       "I am pursuing a Bachelor's in Computer Science at Mohammad Ali Jinnah University, known for its comprehensive curriculum and research opportunities. I'm gaining in-depth knowledge in programming, software development, data structures, and algorithms.",
-    current: true,
+    current: false,
   },
 ];
 
