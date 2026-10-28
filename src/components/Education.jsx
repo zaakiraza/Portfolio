@@ -25,7 +25,7 @@ const Education = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}
+              className={`timeline-item ${index % 2 != 0 ? 'left' : 'right'}`}
             >
               <div className="timeline-content">
                 <div className="timeline-badge">

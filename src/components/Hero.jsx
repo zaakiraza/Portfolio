@@ -90,16 +90,16 @@ const Hero = () => {
           <div className="image-wrapper">
             <div className="animated-border"></div>
             <div className="hero-avatar">
-              <span className="avatar-initials">ZR</span>
+              <img
+                src="/Portfolio/assets/images/profile.jpeg"
+                alt="Zakir Raza"
+                className="profile-photo"
+              />
               <div className="avatar-decoration"></div>
             </div>
           </div>
         </motion.div>
       </div>
-
-      {/* <div className="scroll-Windicator">
-        <div className="W"></div>
-      </div> */}
     </section>
   );
 };

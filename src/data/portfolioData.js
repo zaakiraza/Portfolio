@@ -56,7 +56,9 @@ export const skills = [
   { name: "Tailwind CSS", stack: "Frontend", icon: "tailwind" },
   { name: "Material UI", stack: "Frontend", icon: "material" },
   { name: "JavaScript", stack: "Frontend", icon: "js" },
+  { name: "TypeScript", stack: "Frontend", icon: "typescript" },
   { name: "ES6+", stack: "Frontend", icon: "js" },
+  { name: "SCSS", stack: "Frontend", icon: "scss" },
   { name: "React.js", stack: "Frontend", icon: "react" },
   { name: "State Management", stack: "Frontend", icon: "redux" },
   { name: "Cache", stack: "Frontend", icon: "cache" },
@@ -66,21 +68,25 @@ export const skills = [
   { name: "Python", stack: "Backend", icon: "python" },
   { name: "FastAPI", stack: "Backend", icon: "fastapi" },
   { name: "REST APIs", stack: "Backend", icon: "api" },
+  { name: "GraphQL", stack: "Backend", icon: "graphql" },
   { name: "Authentication", stack: "Backend", icon: "auth" },
   { name: "Redis", stack: "Backend", icon: "redis" },
   { name: "Microservices", stack: "Backend", icon: "microservices" },
   { name: "Caching", stack: "Backend", icon: "cache" },
   { name: "LLM Integration", stack: "Backend", icon: "llm" },
+  { name: "Agentic AI", stack: "Backend", icon: "agenticai" },
   { name: "MongoDB", stack: "Database", icon: "mongodb" },
   { name: "Mongoose", stack: "Database", icon: "mongodb" },
   { name: "SQL", stack: "Database", icon: "database" },
   { name: "MySQL", stack: "Database", icon: "mysql" },
+  { name: "SQLite", stack: "Database", icon: "sqlite" },
   { name: "Vector Database", stack: "Database", icon: "vectordb" },
   { name: "Schema Design", stack: "Database", icon: "schema" },
   { name: "Indexing & Query Optimization", stack: "Database", icon: "indexing" },
   { name: "Sequelize", stack: "Database", icon: "sequelize" },
   { name: "Git", stack: "DevOps", icon: "git" },
   { name: "GitHub", stack: "DevOps", icon: "github" },
+  { name: "Docker", stack: "DevOps", icon: "docker" },
   { name: "CI/CD Pipeline", stack: "DevOps", icon: "cicd" },
   { name: "AWS", stack: "DevOps", icon: "aws" },
   { name: "Vercel / Railway / Render", stack: "DevOps", icon: "vercel" },
@@ -93,46 +99,50 @@ export const skills = [
   { name: "LLM APIs", stack: "ML/AI", icon: "llm" },
   { name: "Embeddings", stack: "ML/AI", icon: "embeddings" },
   { name: "Prompt Engineering", stack: "ML/AI", icon: "prompt" },
+  { name: "C++", stack: "Programming", icon: "cpp" },
+  { name: "OOP", stack: "Programming", icon: "oop" },
+  { name: "DSA", stack: "Programming", icon: "dsa" },
 ];
 
 export const experience = [
   {
-    year: "2025 - Present",
+    year: "Aug 2026 - Present",
+    position: "Intern",
+    company: "Folio3",
+    logo: "/Portfolio/assets/images/folio3.png",
+    location: "Onsite",
+    description:
+      "Focused on Agentic AI, Full stack developemnt",
+    current: true,
+  },
+  {
+    year: "May 2025 - Aug 2026",
     position: "MERN Stack Developer",
     company: "OffTheSchool",
     logo: "/Portfolio/assets/images/ots.jpg",
     location: "Onsite",
     description:
       "Focused on backend development with Node.js, Express, MongoDB, and MySQL to build APIs, manage databases, and deliver scalable web solutions.",
-    current: true,
+    current: false,
   },
   {
-    year: "2024",
+    year: "May 2024 - June 2024",
+    position: "Front-End Developer",
+    company: "Behindev",
+    logo: "/Portfolio/assets/images/behindev.png",
+    location: "Remote",
+    description:
+      "As an Internee at BehinDev, I utilized HTML5, CSS3, and JavaScript to develop visually engaging and user-friendly websites that captivated both our clients and their audiences. I worked in close collaboration with our design and development teams to transform ideas into reality.",
+  },
+  {
+    year: "March 2024 - April 2024",
     position: "Front-End Developer",
     company: "Google Developer Student Club (GDSC)",
     logo: "/Portfolio/assets/images/gdsc.png",
     location: "Remote",
     description:
       "I serve as a Front-End Developer at Google Developer Student Club (GDSC), focusing on creating intuitive and visually appealing web interfaces. Working remotely, I collaborate with a global team to deliver impactful digital solutions.",
-  },
-  {
-    year: "2024",
-    position: "Front-End Developer",
-    company: "NextGenDev",
-    logo: "/Portfolio/assets/images/nextgen.jpg",
-    location: "Remote",
-    description:
-      "As an Internee at NextGenDev, I utilized HTML5, CSS3, and JavaScript to develop visually engaging and user-friendly websites that captivated both our clients and their audiences. I worked in close collaboration with our design and development teams to transform ideas into reality.",
-  },
-  {
-    year: "2024",
-    position: "Front-End Developer",
-    company: "PlacementDost",
-    logo: "/Portfolio/assets/images/placement.jpg",
-    location: "Remote",
-    description:
-      "As an Internee Front-end Web Developer at PlacementDost, my role involved crafting visually engaging and user-friendly websites to captivate both our clients and their audiences. I worked closely with our design and development teams to bring concepts to life.",
-  },
+  }
 ];
 
 export const projects = [

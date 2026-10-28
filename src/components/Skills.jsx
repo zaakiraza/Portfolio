@@ -7,7 +7,8 @@ import {
 import {
   SiExpress, SiMongodb, SiTailwindcss, SiMui, SiMysql, SiScikitlearn,
   SiRedis, SiRedux, SiGithubactions, SiFastapi, SiSequelize, SiNginx,
-  SiPm2, SiVercel
+  SiPm2, SiVercel, SiTypescript, SiSass, SiGraphql, SiDocker, SiSqlite,
+  SiCplusplus
 } from 'react-icons/si';
 import { skills } from '../data/portfolioData';
 import '../styles/Skills.css';
@@ -53,7 +54,16 @@ const Skills = () => {
       pm2: <SiPm2 />,
       secrets: <FaKey />,
       embeddings: <FaBrain />,
-      prompt: <FaPenFancy />
+      prompt: <FaPenFancy />,
+      typescript: <SiTypescript />,
+      scss: <SiSass />,
+      graphql: <SiGraphql />,
+      docker: <SiDocker />,
+      sqlite: <SiSqlite />,
+      agenticai: <FaRobot />,
+      cpp: <SiCplusplus />,
+      oop: <FaBrain />,
+      dsa: <FaNetworkWired />
     };
     return icons[iconName] || <FaDatabase />;
   };
@@ -63,7 +73,8 @@ const Skills = () => {
     'Backend': { color: '#68a063', gradient: 'linear-gradient(135deg, #68a063, #3d6b3d)' },
     'Database': { color: '#4db33d', gradient: 'linear-gradient(135deg, #4db33d, #3d8b2f)' },
     'DevOps': { color: '#ff9900', gradient: 'linear-gradient(135deg, #ff9900, #cc7a00)' },
-    'ML/AI': { color: '#f7931e', gradient: 'linear-gradient(135deg, #f7931e, #e85d04)' }
+    'ML/AI': { color: '#f7931e', gradient: 'linear-gradient(135deg, #f7931e, #e85d04)' },
+    'Programming': { color: '#a855f7', gradient: 'linear-gradient(135deg, #a855f7, #7c3aed)' }
   };
 
   // Group skills by stack
@@ -75,7 +86,7 @@ const Skills = () => {
     return acc;
   }, {});
 
-  const stackOrder = ['Frontend', 'Backend', 'Database', 'DevOps', 'ML/AI'];
+  const stackOrder = ['Frontend', 'Backend', 'Database', 'DevOps', 'ML/AI', 'Programming'];
 
   return (
     <section id="skills" className="skills">

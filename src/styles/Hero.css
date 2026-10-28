@@ -140,6 +140,16 @@
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
 .avatar-decoration {
   position: absolute;
   inset: 20%;
