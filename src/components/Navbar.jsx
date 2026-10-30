@@ -6,14 +6,58 @@ import '../styles/Navbar.css';
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   const [isMobile, setIsMobile] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
+    let lastScrollY = window.scrollY;
+    let hideTimeout = null;
+    let isCurrentlyVisible = true;
+
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      const currentScrollY = window.scrollY;
+
+      // Always show near top
+      if (currentScrollY <= 80) {
+        if (hideTimeout) {
+          clearTimeout(hideTimeout);
+          hideTimeout = null;
+        }
+        setVisible(true);
+        isCurrentlyVisible = true;
+        setScrolled(currentScrollY > 20);
+      } else {
+        setScrolled(true);
+
+        // Scrolling DOWN
+        if (currentScrollY > lastScrollY && currentScrollY - lastScrollY > 5) {
+          // Wait 1.2 seconds before hiding if currently visible
+          if (isCurrentlyVisible && !hideTimeout) {
+            hideTimeout = setTimeout(() => {
+              setVisible(false);
+              isCurrentlyVisible = false;
+              setIsMobile(false);
+              hideTimeout = null;
+            }, 100); // 1.2s delay before becoming invisible
+          }
+        } else if (currentScrollY < lastScrollY && lastScrollY - currentScrollY > 5) {
+          // Scrolling UP -> show immediately & cancel pending hide timer
+          if (hideTimeout) {
+            clearTimeout(hideTimeout);
+            hideTimeout = null;
+          }
+          setVisible(true);
+          isCurrentlyVisible = true;
+        }
+      }
+
+      lastScrollY = currentScrollY;
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      if (hideTimeout) clearTimeout(hideTimeout);
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const navItems = [
@@ -27,7 +71,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   ];
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${!visible ? 'navbar-hidden' : ''}`}>
       <div className="container nav-container">
         <Link to="hero" smooth={true} duration={500} className="logo">
           <span className="logo-text">

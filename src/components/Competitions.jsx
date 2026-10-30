@@ -6,7 +6,7 @@ const Competitions = () => {
   return (
     <section id="competitions" className="competitions section">
       <div className="container">
-        <h2 className="section-title">Hackathons & Competitions</h2>
+          <h2 className="section-title">Hackathons & Competitions</h2>
         <p className="section-sub">Selected hackathons, challenges and competition highlights.</p>
 
         <div className="competitions-grid">

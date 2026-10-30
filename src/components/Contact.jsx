@@ -58,9 +58,9 @@ const Contact = () => {
     <section id="contact" className="contact">
       <div className="container">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5 }}
           viewport={{ once: true }}
           className="section-header"
         >
@@ -73,40 +73,53 @@ const Contact = () => {
 
         <div className="contact-content">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
-            className="contact-info-section"
+            className="contact-info-card"
           >
-            <div className="contact-details">
-              <div className="contact-detail-item">
-                <FaPhone className="detail-icon" />
-                <div>
-                  <h4>Phone</h4>
-                  <a href={`tel:${personalInfo.phone}`}>{personalInfo.phone}</a>
-                </div>
-              </div>
+            <div className="contact-info-top">
+              <h3 className="contact-card-title">Contact Information</h3>
+              <p className="contact-card-desc">
+                Feel free to reach out via phone, email, or through any of my social profiles.
+              </p>
 
-              <div className="contact-detail-item">
-                <FaEnvelope className="detail-icon" />
-                <div>
-                  <h4>Email</h4>
-                  <a href={`mailto:${personalInfo.email}`}>{personalInfo.email}</a>
+              <div className="contact-details">
+                <div className="contact-detail-item">
+                  <div className="detail-icon-wrap">
+                    <FaPhone className="detail-icon" />
+                  </div>
+                  <div>
+                    <span className="detail-label">Phone</span>
+                    <a href={`tel:${personalInfo.phone}`}>{personalInfo.phone}</a>
+                  </div>
                 </div>
-              </div>
 
-              <div className="contact-detail-item">
-                <FaMapMarkerAlt className="detail-icon" />
-                <div>
-                  <h4>Location</h4>
-                  <p>{personalInfo.location}</p>
+                <div className="contact-detail-item">
+                  <div className="detail-icon-wrap">
+                    <FaEnvelope className="detail-icon" />
+                  </div>
+                  <div>
+                    <span className="detail-label">Email</span>
+                    <a href={`mailto:${personalInfo.email}`}>{personalInfo.email}</a>
+                  </div>
+                </div>
+
+                <div className="contact-detail-item">
+                  <div className="detail-icon-wrap">
+                    <FaMapMarkerAlt className="detail-icon" />
+                  </div>
+                  <div>
+                    <span className="detail-label">Location</span>
+                    <p>{personalInfo.location}</p>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="social-links">
-              <h4>Connect With Me</h4>
+            <div className="social-links-block">
+              <h4 className="social-links-heading">Connect With Me</h4>
               <div className="social-icons">
                 <a href={personalInfo.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <FaLinkedin />
@@ -128,59 +141,61 @@ const Contact = () => {
           </motion.div>
 
           <motion.form
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
             className="contact-form"
             onSubmit={handleSubmit}
           >
-            <div className="form-group">
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name *"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
-            </div>
+            <div className="form-fields">
+              <div className="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name *"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
 
-            <div className="form-group">
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email *"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
+              <div className="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email *"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
 
-            <div className="form-group">
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Phone Number"
-                value={formData.phone}
-                onChange={handleChange}
-              />
-            </div>
+              <div className="form-group">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone Number"
+                  value={formData.phone}
+                  onChange={handleChange}
+                />
+              </div>
 
-            <div className="form-group">
-              <textarea
-                name="message"
-                placeholder="Your Message *"
-                rows="6"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              ></textarea>
+              <div className="form-group">
+                <textarea
+                  name="message"
+                  placeholder="Your Message *"
+                  rows="5"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                ></textarea>
+              </div>
             </div>
 
             <button 
               type="submit" 
-              className="btn btn-primary"
+              className="btn btn-primary send-btn"
               disabled={isSubmitting}
             >
               {isSubmitting ? 'Sending...' : (

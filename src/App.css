@@ -15,18 +15,18 @@
 }
 
 :root[data-theme="light"] {
-  --primary-color: #0066FF;
+  --primary-color: #2563EB;
   --secondary-color: #6C63FF;
-  --accent-color: #FF6B9D;
+  --accent-color: #F59E0B;
   --bg-primary: #FFFFFF;
-  --bg-secondary: #F3F4F6;
-  --bg-tertiary: #E5E7EB;
-  --text-primary: #1F2937;
-  --text-secondary: #4B5563;
-  --text-tertiary: #6B7280;
-  --border-color: #E5E7EB;
-  --shadow-color: rgba(0, 102, 255, 0.1);
-  --shadow-hover: rgba(0, 102, 255, 0.2);
+  --bg-secondary: #F8FAFC;
+  --bg-tertiary: #F1F5F9;
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-tertiary: #94A3B8;
+  --border-color: #E2E8F0;
+  --shadow-color: rgba(37, 99, 235, 0.08);
+  --shadow-hover: rgba(37, 99, 235, 0.16);
 }
 
 * {
@@ -38,7 +38,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: clip;
-  scrollbar-color: #00ff88 var(--bg-secondary);
+  scrollbar-color: #4F8EF7 var(--bg-secondary);
   scrollbar-width: auto;
 }
 
@@ -106,16 +106,13 @@ section {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 15px;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-primary);
 }
 
 .title-underline {
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  background: var(--primary-color);
   margin: 0 auto;
   border-radius: 2px;
 }
@@ -155,7 +152,7 @@ section {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: var(--primary-color);
   color: var(--bg-primary);
   box-shadow: 0 4px 15px var(--shadow-color);
 }
@@ -182,10 +179,7 @@ section {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-primary);
 }
 
 @keyframes fadeInUp {
@@ -226,12 +220,12 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00ff88;
+  background: #4F8EF7;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00cc6e;
+  background: #3B82F6;
 }
 
 ::selection {

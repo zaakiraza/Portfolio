@@ -98,6 +98,7 @@ const Skills = () => {
           viewport={{ once: true }}
           className="section-header"
         >
+
           <h2 className="section-title">Skills & Technologies</h2>
           <div className="title-underline"></div>
         </motion.div>

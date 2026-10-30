@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaDownload } from "react-icons/fa";
+import { FaDownload, FaGithub, FaLinkedin, FaEnvelope, FaArrowRight } from "react-icons/fa";
+import { personalInfo } from "../data/portfolioData";
 import "../styles/Hero.css";
 
 const Hero = () => {
@@ -11,9 +12,9 @@ const Hero = () => {
 
   const toRotate = [
     "Full Stack Developer",
+    "Agentic AI Engineer",
     "AI Solutions Builder",
     "Problem Solver",
-    "Software Engineer"
   ];
 
   useEffect(() => {
@@ -43,27 +44,23 @@ const Hero = () => {
 
   return (
     <section id="hero" className="hero">
-      <div className="hero-background">
-        <div className="gradient-overlay"></div>
-      </div>
-
       <div className="container hero-content">
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.7 }}
           className="hero-text"
         >
+          <span className="hero-greeting">Hello, world! 👋</span>
           <h1 className="hero-title">
-            Hi, I'm <span className="gradient-text">Zakir Raza</span>
+            I'm <span className="gradient-text">Zakir Raza</span>
           </h1>
           <h2 className="hero-subtitle">
             <span className="typing-text">{text}</span>
             <span className="cursor">|</span>
           </h2>
           <p className="hero-description">
-            Passionate about creating stunning web experiences and turning ideas
-            into reality.
+            I build full-stack web apps and AI-powered systems — from React UIs to Agentic AI backends.
           </p>
 
           <div className="hero-buttons">
@@ -76,27 +73,39 @@ const Hero = () => {
               <FaDownload /> Download Resume
             </a>
             <a href="#projects" className="btn btn-secondary">
-              View Projects
+              View Projects <FaArrowRight />
+            </a>
+          </div>
+
+          <div className="hero-socials">
+            <a href={personalInfo.social.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <FaGithub />
+            </a>
+            <a href={personalInfo.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <FaLinkedin />
+            </a>
+            <a href={`mailto:${personalInfo.email}`} aria-label="Email">
+              <FaEnvelope />
             </a>
           </div>
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
           className="hero-image"
         >
           <div className="image-wrapper">
-            <div className="animated-border"></div>
             <div className="hero-avatar">
               <img
                 src="/Portfolio/assets/images/profile.jpeg"
                 alt="Zakir Raza"
                 className="profile-photo"
               />
-              <div className="avatar-decoration"></div>
             </div>
+            <div className="image-ring"></div>
+            <div className="image-glow"></div>
           </div>
         </motion.div>
       </div>
