@@ -74,6 +74,35 @@
   text-transform: uppercase;
 }
 
+.education-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.timeline-item.left .education-header {
+  flex-direction: row-reverse;
+}
+
+.timeline-item.right .education-header {
+  flex-direction: row;
+}
+
+.education-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  padding: 0.35rem;
+  flex-shrink: 0;
+}
+
+.education-header-text {
+  flex: 1;
+}
 .timeline-year {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -128,7 +157,16 @@
   .education-timeline::before {
     left: 0;
   }
+  .timeline-item.left .education-header,
+  .timeline-item.right .education-header {
+    flex-direction: row !important;
+    text-align: left;
+  }
 
+  .education-logo {
+    width: 48px;
+    height: 48px;
+  }
   .timeline-item {
     flex-direction: column !important;
     align-items: flex-start !important;

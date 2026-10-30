@@ -99,7 +99,7 @@ const Hero = () => {
           <div className="image-wrapper">
             <div className="hero-avatar">
               <img
-                src="/Portfolio/assets/images/profile.jpeg"
+                src="/Portfolio/assets/images/profile.webp"
                 alt="Zakir Raza"
                 className="profile-photo"
               />
