@@ -10,10 +10,10 @@ const Hero = () => {
   const [typingSpeed, setTypingSpeed] = useState(150);
 
   const toRotate = [
-    "MERN Stack Developer",
     "Full Stack Developer",
-    "UI/UX Enthusiast",
+    "AI Solutions Builder",
     "Problem Solver",
+    "Software Engineer"
   ];
 
   useEffect(() => {

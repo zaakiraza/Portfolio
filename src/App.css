@@ -1,17 +1,17 @@
 /* ==================== CSS VARIABLES ==================== */
 :root[data-theme="dark"] {
-  --primary-color: #00FF88;
-  --secondary-color: #6C63FF;
-  --accent-color: #FFA657;
-  --bg-primary: #0F1419;
-  --bg-secondary: #1C2128;
-  --bg-tertiary: #252C3A;
-  --text-primary: #E6EDF3;
-  --text-secondary: #9CA3AF;
-  --text-tertiary: #6B7280;
-  --border-color: #30363D;
-  --shadow-color: rgba(0, 255, 136, 0.1);
-  --shadow-hover: rgba(0, 255, 136, 0.2);
+  --primary-color: #4F8EF7;
+  --secondary-color: #818CF8;
+  --accent-color: #F59E0B;
+  --bg-primary: #0A0E1A;
+  --bg-secondary: #111827;
+  --bg-tertiary: #1A2035;
+  --text-primary: #F1F5F9;
+  --text-secondary: #94A3B8;
+  --text-tertiary: #64748B;
+  --border-color: #1E2737;
+  --shadow-color: rgba(79, 142, 247, 0.08);
+  --shadow-hover: rgba(79, 142, 247, 0.16);
 }
 
 :root[data-theme="light"] {
