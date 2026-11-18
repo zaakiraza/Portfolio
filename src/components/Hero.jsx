@@ -65,7 +65,7 @@ const Hero = () => {
 
           <div className="hero-buttons">
             <a
-              href="/Portfolio/assets/Resume.pdf"
+              href="/assets/Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
@@ -99,7 +99,7 @@ const Hero = () => {
           <div className="image-wrapper">
             <div className="hero-avatar">
               <img
-                src="/Portfolio/assets/images/profile.webp"
+                src="/assets/images/profile.webp"
                 alt="Zakir Raza"
                 className="profile-photo"
               />
