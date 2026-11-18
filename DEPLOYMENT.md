@@ -1,9 +1,10 @@
-# 🚀 Deployment Guide - GitHub Pages
+# 🚀 Deployment Guide - GitHub Pages with a Custom Domain
 
 ## ✅ What I've Fixed
 
-1. **Added `base: '/Portfolio/'`** to `vite.config.js` - This tells Vite to use the correct path for GitHub Pages
+1. **Added `base: '/'`** to `vite.config.js` - This is required when serving from `zakiraza.dev`
 2. **Created GitHub Actions workflow** - Automatic deployment on every push to main branch
+3. **Added `public/CNAME`** - Connects GitHub Pages to `zakiraza.dev`
 
 ## 📝 Steps to Deploy
 
@@ -26,7 +27,7 @@
 3. **Wait for deployment:**
    - Go to the **Actions** tab in your GitHub repo
    - Watch the deployment workflow complete
-   - Your site will be live at: https://zaakiraza.github.io/Portfolio/
+   - Your site will be live at: https://zakiraza.dev/
 
 ### Option 2: Manual Deployment
 
@@ -62,8 +63,8 @@ If automatic deployment doesn't work, use this:
    - Make sure **Source** is set to **GitHub Actions** or **gh-pages branch**
 
 2. **Verify base path:**
-   - The `vite.config.js` should have `base: '/Portfolio/'`
-   - Repository name must match (case-sensitive)
+   - The `vite.config.js` should have `base: '/'`
+   - The custom domain should be configured in GitHub Pages settings
 
 3. **Clear cache:**
    - Hard refresh your browser (Ctrl + Shift + R)
@@ -81,7 +82,7 @@ If automatic deployment doesn't work, use this:
    ```bash
    npm run preview
    ```
-   - Test if it works on http://localhost:4173/Portfolio/
+   - Test it locally at http://localhost:4173/
 
 ## 📂 File Structure for Deployment
 
@@ -99,7 +100,7 @@ Portfolio/
 ## 🌐 Your Portfolio URLs
 
 - **GitHub Repository**: https://github.com/zaakiraza/Portfolio
-- **Live Site**: https://zaakiraza.github.io/Portfolio/
+- **Live Site**: https://zakiraza.dev/
 - **Actions**: https://github.com/zaakiraza/Portfolio/actions
 
 ## 🚀 Next Steps
