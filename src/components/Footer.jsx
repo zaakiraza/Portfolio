@@ -19,7 +19,7 @@ const Footer = () => {
 
           <div className="footer-bottom">
             <p className="copyright">
-              © {currentYear} {personalInfo.name}. Made with <FaHeart className="heart-icon" />
+              © {currentYear} {personalInfo.name}. Built with <FaHeart className="heart-icon" /> in Karachi
             </p>
           </div>
         </div>
