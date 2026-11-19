@@ -41,7 +41,8 @@
   color: var(--text-tertiary);
   letter-spacing: 0.5px;
   margin-bottom: 0.75rem;
-  font-family: 'Courier New', monospace;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .hero-title {

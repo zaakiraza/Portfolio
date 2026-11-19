@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
-  FaLinkedin, FaGithub, FaSkype, FaWhatsapp, 
+  FaLinkedin, FaGithub, FaWhatsapp, 
   FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane 
 } from 'react-icons/fa';
 import { personalInfo } from '../data/portfolioData';
@@ -67,7 +67,7 @@ const Contact = () => {
           <h2 className="section-title">Get In Touch</h2>
           <div className="title-underline"></div>
           <p className="section-subtitle">
-            Have a project in mind? Let's work together!
+            Open to full-time roles and collaborations. Send a message and I'll reply promptly.
           </p>
         </motion.div>
 
@@ -82,7 +82,7 @@ const Contact = () => {
             <div className="contact-info-top">
               <h3 className="contact-card-title">Contact Information</h3>
               <p className="contact-card-desc">
-                Feel free to reach out via phone, email, or through any of my social profiles.
+                Reach out by phone or email, or connect with me on LinkedIn and GitHub.
               </p>
 
               <div className="contact-details">
@@ -127,9 +127,6 @@ const Contact = () => {
                 <a href={personalInfo.social.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <FaGithub />
                 </a>
-                <a href={personalInfo.social.skype} target="_blank" rel="noopener noreferrer" aria-label="Skype">
-                  <FaSkype />
-                </a>
                 <a href={personalInfo.social.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                   <FaWhatsapp />
                 </a>
@@ -148,6 +145,7 @@ const Contact = () => {
             className="contact-form"
             onSubmit={handleSubmit}
           >
+            <input type="checkbox" name="botcheck" tabIndex="-1" autoComplete="off" style={{ display: 'none' }} />
             <div className="form-fields">
               <div className="form-group">
                 <input

@@ -83,15 +83,8 @@ const Skills = () => {
     return icons[iconName] || <FaDatabase />;
   };
 
-  const stackConfig = {
-    'Frontend': { color: '#61dafb', gradient: 'linear-gradient(135deg, #61dafb, #21a1c4)' },
-    'Backend': { color: '#68a063', gradient: 'linear-gradient(135deg, #68a063, #3d6b3d)' },
-    'Database': { color: '#4db33d', gradient: 'linear-gradient(135deg, #4db33d, #3d8b2f)' },
-    'DevOps': { color: '#ff9900', gradient: 'linear-gradient(135deg, #ff9900, #cc7a00)' },
-    'AI & LLMs': { color: '#f7931e', gradient: 'linear-gradient(135deg, #f7931e, #e85d04)' },
-    'Testing & SEO': { color: '#14b8a6', gradient: 'linear-gradient(135deg, #14b8a6, #0f766e)' },
-    'Programming': { color: '#a855f7', gradient: 'linear-gradient(135deg, #a855f7, #7c3aed)' }
-  };
+  const accent = { color: 'var(--primary-color)', gradient: 'linear-gradient(135deg, var(--primary-color), var(--secondary-color))' };
+  const stackConfig = new Proxy({}, { get: () => accent });
 
   // Group skills by stack
   const groupedSkills = skills.reduce((acc, skill) => {

@@ -79,7 +79,7 @@ const Projects = () => {
           <h2 className="section-title">Featured Projects</h2>
           <div className="title-underline"></div>
           <p className="section-subtitle">
-            Here are some of my recent works and contributions
+            Selected work across full-stack applications, AI systems and developer tooling
           </p>
         </motion.div>
 
@@ -129,7 +129,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       className="project-link"
                     >
-                      <FaExternalLinkAlt /> View Project
+                      {project.link.includes("github.com") ? <><FaGithub /> View Code</> : <><FaExternalLinkAlt /> Live Demo</>}
                     </a>
                   </div>
                 </div>

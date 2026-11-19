@@ -1,4 +1,3 @@
-import React from 'react';
 import { competitions } from '../data/portfolioData';
 import '../styles/Competitions.css';
 
@@ -6,7 +5,7 @@ const Competitions = () => {
   return (
     <section id="competitions" className="competitions section">
       <div className="container">
-          <h2 className="section-title">Hackathons & Competitions</h2>
+        <h2 className="section-title">Hackathons &amp; Competitions</h2>
         <p className="section-sub">Selected hackathons, challenges and competition highlights.</p>
 
         <div className="competitions-grid">
@@ -22,7 +21,7 @@ const Competitions = () => {
               </div>
               {c.link ? (
                 <footer className="competition-footer">
-                  <a href={c.link} target="_blank" rel="noreferrer" className="btn-sm">View</a>
+                  <a href={c.link} target="_blank" rel="noreferrer" className="btn-sm">View Project</a>
                 </footer>
               ) : null}
             </article>

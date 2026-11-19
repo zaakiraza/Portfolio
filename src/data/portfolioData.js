@@ -16,7 +16,6 @@ export const personalInfo = {
   social: {
     linkedin: "https://www.linkedin.com/in/zakiraza404/",
     github: "https://github.com/zaakiraza",
-    skype: "https://join.skype.com/invite/uJHeZ9HJnMoO",
     whatsapp: "https://wa.me/923293271727",
   },
 };

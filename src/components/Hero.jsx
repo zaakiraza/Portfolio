@@ -51,7 +51,7 @@ const Hero = () => {
           transition={{ duration: 0.7 }}
           className="hero-text"
         >
-          <span className="hero-greeting">Hello, world! 👋</span>
+          <span className="hero-greeting">Welcome to my portfolio</span>
           <h1 className="hero-title">
             I'm <span className="gradient-text">Zakir Raza</span>
           </h1>
@@ -100,7 +100,8 @@ const Hero = () => {
           <div className="image-wrapper">
             <div className="hero-avatar">
               <img
-                src="/assets/images/profile.webp"
+                // src="/assets/images/profile.webp"
+                src="/assets/images/front.png"
                 alt="Zakir Raza"
                 className="profile-photo"
                 width="400"
