@@ -2,51 +2,92 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/webp" href="/assets/images/favicon.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zakir Raza | Full Stack & Agentic AI Developer</title>
 
-    <!-- SEO Meta Tags -->
+    <!-- Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+    <link rel="icon" type="image/webp" href="/assets/images/favicon.webp" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#0A0E1A" />
+    <meta name="color-scheme" content="dark light" />
+
+    <!-- SEO -->
     <meta
       name="description"
-      content="Zakir Raza - MERN Stack Developer & Full Stack Developer. Passionate about creating stunning web experiences."
-    />
-    <meta
-      name="keywords"
-      content="Zakir Raza, MERN Stack Developer, Full Stack Developer, Web Developer, React Developer, Node.js"
+      content="Zakir Raza — Full Stack & Agentic AI developer in Karachi, Pakistan. I build MERN web apps and AI-powered systems with FastAPI, RAG and LLMs."
     />
     <meta name="author" content="Zakir Raza" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="https://zakiraza.dev/" />
-    <meta property="og:url" content="https://zakiraza.dev/" />
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Zakir Raza - MERN Stack Developer" />
+    <meta property="og:site_name" content="Zakir Raza" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://zakiraza.dev/" />
+    <meta property="og:title" content="Zakir Raza | Full Stack & Agentic AI Developer" />
     <meta
       property="og:description"
-      content="Portfolio of Zakir Raza - MERN Stack Developer & Full Stack Developer"
+      content="Portfolio of Zakir Raza — MERN, FastAPI, RAG and Agentic AI projects, experience and hackathons."
     />
-    <meta property="og:image" content="/assets/images/logo.webp" />
+    <meta property="og:image" content="https://zakiraza.dev/assets/images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Zakir Raza — Full Stack & Agentic AI Developer" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Zakir Raza - MERN Stack Developer" />
+    <meta name="twitter:title" content="Zakir Raza | Full Stack & Agentic AI Developer" />
     <meta
       name="twitter:description"
-      content="Portfolio of Zakir Raza - MERN Stack Developer & Full Stack Developer"
+      content="Portfolio of Zakir Raza — MERN, FastAPI, RAG and Agentic AI projects, experience and hackathons."
     />
+    <meta name="twitter:image" content="https://zakiraza.dev/assets/images/og-image.png" />
 
-    <!-- Google Fonts -->
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Zakir Raza",
+        "url": "https://zakiraza.dev/",
+        "image": "https://zakiraza.dev/assets/images/profile.webp",
+        "jobTitle": "Full Stack & Agentic AI Developer",
+        "address": { "@type": "PostalAddress", "addressLocality": "Karachi", "addressCountry": "PK" },
+        "alumniOf": "Muhammad Ali Jinnah University",
+        "knowsAbout": ["React", "Node.js", "Express", "MongoDB", "FastAPI", "RAG", "LLM integration", "Agentic AI"],
+        "sameAs": [
+          "https://github.com/zaakiraza",
+          "https://www.linkedin.com/in/zakiraza404/"
+        ]
+      }
+    </script>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <title>Zakir Raza - MERN Stack Developer | Portfolio</title>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <main style="font-family:sans-serif;max-width:640px;margin:3rem auto;padding:0 1rem">
+        <h1>Zakir Raza</h1>
+        <p>Full Stack &amp; Agentic AI Developer — Karachi, Pakistan. MERN, FastAPI, RAG and LLM-powered applications.</p>
+        <ul>
+          <li><a href="/assets/Resume.pdf">Resume (PDF)</a></li>
+          <li><a href="https://github.com/zaakiraza">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/zakiraza404/">LinkedIn</a></li>
+        </ul>
+        <p>Please enable JavaScript to view the full portfolio.</p>
+      </main>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

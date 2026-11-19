@@ -8,7 +8,7 @@
   --bg-tertiary: #1A2035;
   --text-primary: #F1F5F9;
   --text-secondary: #94A3B8;
-  --text-tertiary: #64748B;
+  --text-tertiary: #7B8BA3;
   --border-color: #1E2737;
   --shadow-color: rgba(79, 142, 247, 0.08);
   --shadow-hover: rgba(79, 142, 247, 0.16);
@@ -23,7 +23,7 @@
   --bg-tertiary: #F1F5F9;
   --text-primary: #0F172A;
   --text-secondary: #475569;
-  --text-tertiary: #94A3B8;
+  --text-tertiary: #64748B;
   --border-color: #E2E8F0;
   --shadow-color: rgba(37, 99, 235, 0.08);
   --shadow-hover: rgba(37, 99, 235, 0.16);
@@ -244,3 +244,17 @@ section {
 .mt-1 { margin-top: 1rem; }
 .mt-2 { margin-top: 2rem; }
 .mt-3 { margin-top: 3rem; }
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

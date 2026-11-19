@@ -2,13 +2,14 @@ import { motion } from 'framer-motion';
 import { 
   FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, 
   FaGitAlt, FaBootstrap, FaDatabase, FaPython, FaAws, FaGithub, FaServer,
-  FaLock, FaRobot, FaKey, FaBrain, FaPenFancy, FaNetworkWired
+  FaLock, FaRobot, FaKey, FaBrain, FaPenFancy, FaNetworkWired, FaGlobe
 } from 'react-icons/fa';
 import {
   SiExpress, SiMongodb, SiTailwindcss, SiMui, SiMysql, SiScikitlearn,
   SiRedis, SiRedux, SiGithubactions, SiFastapi, SiSequelize, SiNginx,
   SiPm2, SiVercel, SiTypescript, SiSass, SiGraphql, SiDocker, SiSqlite,
-  SiCplusplus
+  SiCplusplus, SiFirebase, SiOpenai, SiClaude, SiGooglegemini, SiJest, SiVitest,
+  SiPostgresql, SiNetlify, SiRailway, SiVite, SiGoogleanalytics, SiGooglesearchconsole
 } from 'react-icons/si';
 import { skills } from '../data/portfolioData';
 import '../styles/Skills.css';
@@ -63,7 +64,21 @@ const Skills = () => {
       agenticai: <FaRobot />,
       cpp: <SiCplusplus />,
       oop: <FaBrain />,
-      dsa: <FaNetworkWired />
+      dsa: <FaNetworkWired />,
+      vite: <SiVite />,
+      firebase: <SiFirebase />,
+      postgresql: <SiPostgresql />,
+      openai: <SiOpenai />,
+      claude: <SiClaude />,
+      gemini: <SiGooglegemini />,
+      mcp: <FaNetworkWired />,
+      jest: <SiJest />,
+      vitest: <SiVitest />,
+      seo: <FaGlobe />,
+      searchconsole: <SiGooglesearchconsole />,
+      analytics: <SiGoogleanalytics />,
+      railway: <SiRailway />,
+      netlify: <SiNetlify />
     };
     return icons[iconName] || <FaDatabase />;
   };
@@ -73,7 +88,8 @@ const Skills = () => {
     'Backend': { color: '#68a063', gradient: 'linear-gradient(135deg, #68a063, #3d6b3d)' },
     'Database': { color: '#4db33d', gradient: 'linear-gradient(135deg, #4db33d, #3d8b2f)' },
     'DevOps': { color: '#ff9900', gradient: 'linear-gradient(135deg, #ff9900, #cc7a00)' },
-    'ML/AI': { color: '#f7931e', gradient: 'linear-gradient(135deg, #f7931e, #e85d04)' },
+    'AI & LLMs': { color: '#f7931e', gradient: 'linear-gradient(135deg, #f7931e, #e85d04)' },
+    'Testing & SEO': { color: '#14b8a6', gradient: 'linear-gradient(135deg, #14b8a6, #0f766e)' },
     'Programming': { color: '#a855f7', gradient: 'linear-gradient(135deg, #a855f7, #7c3aed)' }
   };
 
@@ -86,7 +102,7 @@ const Skills = () => {
     return acc;
   }, {});
 
-  const stackOrder = ['Frontend', 'Backend', 'Database', 'DevOps', 'ML/AI', 'Programming'];
+  const stackOrder = ['Frontend', 'Backend', 'Database', 'AI & LLMs', 'Testing & SEO', 'DevOps', 'Programming'];
 
   return (
     <section id="skills" className="skills">

@@ -5,7 +5,7 @@ A professional, modern, and fully responsive portfolio website built with **Reac
 ## ✨ Features
 
 - ✅ **Dark/Light Mode** - Theme toggle with localStorage
-- ✅ **Modern Design** - Neon green & purple gradient theme
+- ✅ **Modern Design** - Dark/light theme with blue & indigo accents
 - ✅ **Smooth Animations** - Framer Motion & AOS
 - ✅ **Fully Responsive** - Works on all devices
 - ✅ **SEO Optimized** - Meta tags and semantic HTML

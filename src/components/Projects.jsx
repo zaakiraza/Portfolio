@@ -64,7 +64,7 @@ const Projects = () => {
     });
   }, [activeFilter]);
 
-  const displayedProjects = showAll ? filteredProjects : filteredProjects.slice(0, 6);
+  const displayedProjects = showAll ? filteredProjects : filteredProjects.slice(0, 8);
 
   return (
     <section id="projects" className="projects">
@@ -149,7 +149,7 @@ const Projects = () => {
           ))}
         </div>
 
-        {filteredProjects.length > 6 && (
+        {filteredProjects.length > 8 && (
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

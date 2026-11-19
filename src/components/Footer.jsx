@@ -19,7 +19,7 @@ const Footer = () => {
 
           <div className="footer-bottom">
             <p className="copyright">
-              © {currentYear} {personalInfo.name}. Made with <FaHeart className="heart-icon" /> by Zakir Raza
+              © {currentYear} {personalInfo.name}. Made with <FaHeart className="heart-icon" />
             </p>
           </div>
         </div>

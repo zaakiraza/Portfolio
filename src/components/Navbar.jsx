@@ -37,7 +37,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               isCurrentlyVisible = false;
               setIsMobile(false);
               hideTimeout = null;
-            }, 100); // 1.2s delay before becoming invisible
+            }, 400); // short delay before hiding on scroll down
           }
         } else if (currentScrollY < lastScrollY && lastScrollY - currentScrollY > 5) {
           // Scrolling UP -> show immediately & cancel pending hide timer

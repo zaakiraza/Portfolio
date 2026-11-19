@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { MotionConfig } from 'framer-motion';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Navbar from './components/Navbar';
@@ -16,12 +17,14 @@ import './App.css';
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
     const saved = localStorage.getItem('darkMode');
-    return saved ? JSON.parse(saved) : true;
+    if (saved) return JSON.parse(saved);
+    return !window.matchMedia('(prefers-color-scheme: light)').matches;
   });
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 600,
+      disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches,
       once: true,
       offset: 100
     });
@@ -37,6 +40,7 @@ function App() {
   };
 
   return (
+    <MotionConfig reducedMotion="user">
     <div className="app">
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <main>
@@ -51,6 +55,7 @@ function App() {
       </main>
       <Footer />
     </div>
+    </MotionConfig>
   );
 }
 

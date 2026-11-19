@@ -4,18 +4,18 @@ import { FaDownload, FaGithub, FaLinkedin, FaEnvelope, FaArrowRight } from "reac
 import { personalInfo } from "../data/portfolioData";
 import "../styles/Hero.css";
 
+const toRotate = [
+  "Full Stack Developer",
+  "Agentic AI Engineer",
+  "AI Solutions Builder",
+  "Problem Solver",
+];
+
 const Hero = () => {
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
-
-  const toRotate = [
-    "Full Stack Developer",
-    "Agentic AI Engineer",
-    "AI Solutions Builder",
-    "Problem Solver",
-  ];
 
   useEffect(() => {
     const handleType = () => {
@@ -40,7 +40,7 @@ const Hero = () => {
 
     const timer = setTimeout(handleType, typingSpeed);
     return () => clearTimeout(timer);
-  }, [text, isDeleting, loopNum, typingSpeed, toRotate]);
+  }, [text, isDeleting, loopNum, typingSpeed]);
 
   return (
     <section id="hero" className="hero">
@@ -55,9 +55,9 @@ const Hero = () => {
           <h1 className="hero-title">
             I'm <span className="gradient-text">Zakir Raza</span>
           </h1>
-          <h2 className="hero-subtitle">
-            <span className="typing-text">{text}</span>
-            <span className="cursor">|</span>
+          <h2 className="hero-subtitle" aria-label="Full Stack and Agentic AI Developer">
+            <span className="typing-text" aria-hidden="true">{text}</span>
+            <span className="cursor" aria-hidden="true">|</span>
           </h2>
           <p className="hero-description">
             I build full-stack web apps and AI-powered systems — from React UIs to Agentic AI backends.
@@ -69,6 +69,7 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
+              download="Zakir_Raza_Resume.pdf"
             >
               <FaDownload /> Download Resume
             </a>
@@ -102,6 +103,9 @@ const Hero = () => {
                 src="/assets/images/profile.webp"
                 alt="Zakir Raza"
                 className="profile-photo"
+                width="400"
+                height="400"
+                fetchpriority="high"
               />
             </div>
             <div className="image-ring"></div>

@@ -54,7 +54,11 @@ const Experience = () => {
                 <p className="experience-location">
                   <FaMapMarkerAlt /> {exp.location}
                 </p>
-                <p className="experience-description">{exp.description}</p>
+                <ul className="experience-highlights">
+                  {exp.highlights.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
               </div>
             </motion.div>
           ))}
