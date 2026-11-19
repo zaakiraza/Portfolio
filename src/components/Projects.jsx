@@ -110,7 +110,7 @@ const Projects = () => {
               key={project.id}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: (index % 3) * 0.08 }}
               viewport={{ once: true }}
               className="project-card"
             >

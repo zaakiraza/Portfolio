@@ -15,10 +15,6 @@
   padding: 0.6rem 0;
 }
 
-.navbar.navbar-hidden {
-  transform: translateY(-110%);
-}
-
 .nav-container {
   display: flex;
   justify-content: space-between;

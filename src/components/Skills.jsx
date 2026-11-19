@@ -119,7 +119,7 @@ const Skills = () => {
                 key={stack}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: stackIndex * 0.1 }}
+                transition={{ duration: 0.5, delay: Math.min(stackIndex * 0.06, 0.2) }}
                 viewport={{ once: true }}
                 className="skill-category"
               >
@@ -135,9 +135,9 @@ const Skills = () => {
                       key={index}
                       initial={{ opacity: 0, scale: 0.8 }}
                       whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.3, delay: index * 0.05 }}
+                      transition={{ duration: 0.3, delay: Math.min(index * 0.025, 0.2) }}
                       viewport={{ once: true }}
-                      whileHover={{ scale: 1.1, y: -5 }}
+                      whileHover={{ y: -3 }}
                       className="skill-chip"
                       style={{ '--chip-color': stackConfig[stack]?.color }}
                     >

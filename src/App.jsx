@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
 import { MotionConfig } from 'framer-motion';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -20,15 +18,6 @@ function App() {
     if (saved) return JSON.parse(saved);
     return !window.matchMedia('(prefers-color-scheme: light)').matches;
   });
-
-  useEffect(() => {
-    AOS.init({
-      duration: 600,
-      disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches,
-      once: true,
-      offset: 100
-    });
-  }, []);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light');

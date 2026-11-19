@@ -68,7 +68,7 @@
 
 .cursor {
   color: var(--primary-color);
-  animation: pulse 1s infinite;
+  animation: blink 1.1s step-end infinite;
 }
 
 .hero-description {

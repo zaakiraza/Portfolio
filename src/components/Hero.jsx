@@ -4,11 +4,12 @@ import { FaDownload, FaGithub, FaLinkedin, FaEnvelope, FaArrowRight } from "reac
 import { personalInfo } from "../data/portfolioData";
 import "../styles/Hero.css";
 
+// Types through each title once, then settles on the last one.
 const toRotate = [
   "Full Stack Developer",
   "Agentic AI Engineer",
   "AI Solutions Builder",
-  "Problem Solver",
+  "Full Stack Developer",
 ];
 
 const Hero = () => {
@@ -28,10 +29,11 @@ const Hero = () => {
           : fullText.substring(0, text.length + 1)
       );
 
-      setTypingSpeed(isDeleting ? 30 : 150);
+      setTypingSpeed(isDeleting ? 45 : 90);
 
       if (!isDeleting && text === fullText) {
-        setTimeout(() => setIsDeleting(true), 2000);
+        if (i === toRotate.length - 1) return; // final title stays
+        setTimeout(() => setIsDeleting(true), 2500);
       } else if (isDeleting && text === "") {
         setIsDeleting(false);
         setLoopNum(loopNum + 1);

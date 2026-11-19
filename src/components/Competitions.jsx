@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { competitions } from '../data/portfolioData';
 import '../styles/Competitions.css';
 
@@ -10,7 +11,14 @@ const Competitions = () => {
 
         <div className="competitions-grid">
           {competitions.map((c) => (
-            <article key={c.id} className="competition-card" data-aos="fade-up">
+            <motion.article
+              key={c.id}
+              className="competition-card"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
               <header className="competition-header">
                 <h3 className="competition-title">{c.title}</h3>
                 <span className="competition-year">{c.year}</span>
@@ -24,7 +32,7 @@ const Competitions = () => {
                   <a href={c.link} target="_blank" rel="noreferrer" className="btn-sm">View Project</a>
                 </footer>
               ) : null}
-            </article>
+            </motion.article>
           ))}
         </div>
       </div>
