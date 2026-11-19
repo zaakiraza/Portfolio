@@ -41,7 +41,7 @@ const StatCounter = ({ target, suffix = '+' }) => {
 
 const About = () => {
   const stats = [
-    { target: 1, suffix: '+', label: 'Years Experience' },
+    { target: 3, suffix: '', label: 'Years Experience' },
     { target: 10, suffix: '+', label: 'Sites Deployed' },
     { target: 9, suffix: '+', label: 'Certifications' },
     { target: 5, suffix: '+', label: 'Hackathons' },

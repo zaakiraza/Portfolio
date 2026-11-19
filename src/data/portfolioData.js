@@ -9,7 +9,7 @@ export const personalInfo = {
   location: "Karachi, Pakistan",
   about: {
     intro:
-      "Full-stack developer with over a year of professional experience building and deploying production web applications using the MERN stack. I build React front ends with hooks and state management (Redux, Context API, Zustand) and Node.js/Express APIs backed by MongoDB, MySQL and PostgreSQL, deployed on AWS with Docker, Nginx and CI/CD.",
+      "Full-stack developer with about 3 years of experience (internships since 2024, professional roles since 2025) building and deploying production web applications using the MERN stack. I build React front ends with hooks and state management (Redux, Context API, Zustand) and Node.js/Express APIs backed by MongoDB, MySQL and PostgreSQL, deployed on AWS with Docker, Nginx and CI/CD.",
     description:
       "I have deployed 10+ websites to production and led the development team at Off The School. Currently I build agentic AI features with Claude, Gemini and GPT models as a Software Engineering Intern at Folio3.",
   },
